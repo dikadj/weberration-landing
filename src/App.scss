@@ -55,6 +55,17 @@ $link-color: rgb(30, 30, 30);
 }
 
 @mixin button-link($color, $bg) {
+  background: transparentize($bg, .5);
+  color: lighten($color, 30%);
+  text-decoration: none;
+
+  &:hover {
+    background: $bg;
+    color: $color;
+	}
+}
+
+@mixin button-link-flipped($color, $bg) {
   background: $bg;
   color: lighten($color, 30%);
   text-decoration: none;
@@ -77,7 +88,7 @@ $bg-color: rgb(240, 240, 240);
 $text-color: $main-color;
 
 .menu-item {
-  @include button-link($link-color, $bg-color);
+  @include button-link-flipped($link-color, $bg-color);
 }
 
 .welcome {
