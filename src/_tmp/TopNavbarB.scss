@@ -1,0 +1,115 @@
+
+// Main Color
+$bgcolor: rgb(30,30,30);
+$bgpage: rgb(240,240,240);
+$displaycolor: #fff;
+$secondbase: rgb(46,55,62);
+
+.nav-item {
+  .nav-link {
+    color: $displaycolor;
+  }
+  &.active {
+    margin: 0;
+    padding: 0;
+    &:hover, &:active {
+      background: none;
+    }
+  }
+  &:hover {
+    background: $displaycolor;
+    .nav-link {
+      color: $bgcolor;
+    }
+  }
+  &:active {
+    background: $bgcolor;
+    .nav-link {
+      color: $displaycolor;
+    }
+  }
+}
+
+.form-custom {
+  input.input-custom {
+    color: darken($bgcolor, 70%);
+    border: 1px solid $displaycolor;
+  }
+  .submit-custom {
+    font-size: 1.8rem;
+    border: 1px solid $displaycolor;
+    color: $displaycolor;
+    background: $bgcolor;
+    &:hover {
+      color: $bgcolor;
+      background: $displaycolor;
+    }
+  }
+}
+
+.dropdown-menu {
+  color: $bgcolor;
+  background: $displaycolor;
+  border: 1px solid $bgcolor;
+  .dropdown-item {
+    color: $bgcolor;
+    &:hover {
+      color: $displaycolor;
+      background: $bgcolor;
+    }
+  }
+}
+
+button.navbar-toggler {
+  color: lighten($bgcolor, 70%);
+  background: none;
+  .navbar-toggler-icon {
+    color: $displaycolor;
+  }
+  &:hover {
+    .navbar-toggler-icon {
+      color: lighten($bgcolor, 15%);
+      &:active {
+        color: $displaycolor;
+      }
+    }
+  }
+}
+
+.navbar-toggle-hidden {
+  display: none;
+}
+
+.navbar-toggle-active, {
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .logo-img {
+    width: 130px;
+  }
+  .nav-item .nav-link {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-img {
+    width: 140px;
+  }
+  .nav-item .nav-link {
+    font-size: 1rem;
+  }
+}
+
+.pt-56px {
+  padding-top: 56px;
+}
+
+.pt-36px {
+  padding-top: 36px;
+}
+
+body {
+  background: $bgpage;
+}

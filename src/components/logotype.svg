@@ -1,0 +1,89 @@
+<svg
+	id="Layer_1"
+	data-name="Layer 1"
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 769.15 116.6"
+>
+	<title>weberration logotype</title>
+	<defs>
+		<style>
+			.cls-1, .cls-2, .cls-3, .cls-4 {
+				fill: none;
+				stroke: #fff;
+				stroke-linejoin: round;
+			}
+			.cls-1,.cls-2,.cls-4 {
+				stroke-linecap: round;
+			}
+			.cls-1,.cls-2,.cls-3 {
+				stroke-width: 10px;
+			}
+			.cls-1 {
+				fill-rule: evenodd;
+			}
+			.cls-3 {
+				stroke-linecap: square;
+			}
+			.cls-4 {
+				stroke-width: 14px;
+			}
+		</style>
+	</defs>
+	<polyline
+		class="cls-1"
+		points="128.09 37.79 97.31 108.85 66.54 66.21 35.77 108.85 5 37.79"
+	/>
+	<rect
+		class="cls-2"
+		x="658.76"
+		y="40.53"
+		width="41.03"
+		height="71.06"
+	/>
+	<polyline
+		class="cls-1"
+		points="764.15 111.59 764.15 40.53 723.13 40.53 723.13 111.59"
+	/>
+	<polyline
+		class="cls-2"
+		points="403.62 58.3 395.93 40.53 365.16 40.53 365.16 111.59"
+	/>
+	<polyline
+		class="cls-2"
+		points="465.42 58.3 457.73 40.53 426.95 40.53 426.95 111.59"
+	/>
+	<line
+		class="cls-2"
+		x1="635.43"
+		y1="40.53"
+		x2="635.43"
+		y2="111.6"
+	/>
+	<polyline
+		class="cls-2"
+		points="542.86 58.3 573.63 58.3 573.63 40.53 573.63 111.59 604.4 111.59 612.1 93.83"
+	/>
+	<polygon
+		class="cls-3"
+		points="225.92 5 225.92 111.59 256.69 111.59 225.92 40.53 225.92 5"
+	/>
+	<line
+		class="cls-4"
+		x1="612.09"
+		y1="40.53"
+		x2="612.09"
+		y2="40.53"
+	/>
+	<polyline
+		class="cls-2"
+		points="488.75 40.53 519.52 40.53 519.52 111.59 488.75 111.59 519.52 40.53"
+	/>
+	<polyline
+		class="cls-2"
+		points="341.82 93.83 334.13 111.59 280.02 111.59 310.8 40.53 310.8 111.59"
+	/>
+	<polyline
+		class="cls-2"
+		points="202.58 93.83 194.89 111.59 140.78 111.59 171.56 40.53 171.56 111.59"
+	/>
+</svg>

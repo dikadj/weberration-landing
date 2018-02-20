@@ -1,0 +1,89 @@
+
+$color-base: rgb(240, 240, 240);
+$nav-bg: $color-base;
+
+body {
+  background: $nav-bg;
+}
+
+// =======
+// AppBar
+// =======
+
+// sm
+@media (max-width: 767.98px) {
+  .appbar {
+    height: 48px;
+    margin-bottom: -48px;
+  }
+
+  .logo,
+  .menu {
+    height: 1rem;
+  }
+}
+
+// lg
+@media (min-width: 768px) {
+  .appbar {
+    height: 56px;
+    margin-bottom: -56px;
+  }
+
+  .logo,
+  .menu {
+    height: 1.5rem;
+  }
+}
+
+// =======
+// Drawer Menu
+// =======
+
+$link-color: rgb(60, 60, 60);
+
+@mixin link($color, $hover) {
+  color: $color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover;
+    text-decoration: none;
+	}
+}
+
+@mixin button-link($color, $bg) {
+  background: transparentize($bg, .5);
+  color: darken($color, 15%);
+  text-decoration: none;
+
+  &:hover {
+    background: $bg;
+    color: $color;
+	}
+}
+
+.menu,
+.close-drawer {
+  @include link(#fff, transparentize(#fff, .5));
+}
+
+$main-color: rgb(30, 30, 30);
+$bg-color: rgb(240, 240, 240);
+$text-color: $main-color;
+
+.menu-item {
+  @include button-link($link-color, $bg-color);
+}
+
+.welcome {
+  background: url('https://source.unsplash.com/qrMLvb60_rg/1200x800') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+
+  .welcome-search-subscribe {
+    @include button-link($bg-color, $text-color);
+  }
+}
