@@ -4,7 +4,6 @@ import Link from "react-router-dom/Link"
 
 import Drawer from "material-ui/Drawer"
 import MenuIcon from "material-ui-icons/Menu"
-import IconButton from "material-ui/IconButton"
 import CloseIcon from "react-icons/lib/md/close"
 import DummyIcon from "react-icons/lib/md/extension"
 
@@ -43,18 +42,19 @@ export default class App extends Component {
 						// opacity: "0.5",
 					}}
 				>
-					<Link to="/">
+					<Link to="/" className="logo m-3 m-md-4">
 						<img
 							src={logo}
 							alt="logo"
 							height="100%"
-							className="logo m-3 m-md-4"
 						/>
 					</Link>
-					<Link to="/" onClick={handleDrawerToggle}>
-						<MenuIcon
-							className="menu m-3 m-md-4"
-						/>
+					<Link
+						to="/"
+						className="menu m-3 m-md-4"
+						onClick={handleDrawerToggle}
+					>
+						<MenuIcon />
 					</Link>
 					<Drawer
 						open={this.state.open}
@@ -65,36 +65,34 @@ export default class App extends Component {
 							style={{
 								width: "100%",
 								height: "150px",
-								background: "url('https://source.unsplash.com/3YfSwCfJ6Do/1200x800') no-repeat",
-								backgroundSize: "cover",
+								backgroundColor: "rgb(240,240,240)",
+								backgroundImage: "url('https://source.unsplash.com/3YfSwCfJ6Do/1200x800')",
+								backgroundRepeat: "no-repeat",
 								backgroundPosition: "center",
+								backgroundSize: "cover",
 							}}
 						>
 							<div className="d-flex justify-content-end">
-								<IconButton
-									onClick={handleDrawerToggle}
-									className="close-drawer"
-									style={{
-										color: "#fff",
-									}}
+								<Link
+									to="/"
+									className="close-drawer m-3"
+									onClick={handleDrawerClose}
 								>
-									<CloseIcon
-										className=""
-									/>
-								</IconButton>
+									<CloseIcon />
+								</Link>
 							</div>
 						</div>
 						<div className="d-flex flex-column">
 							<Link
-								className="btn menu-item px-3"
+								className="btn menu-item"
 								to="/"
 								onClick={handleDrawerClose}
 							>
 								<DummyIcon />
-								<span> Category 1</span>
+								<span> Category 1xxxxx</span>
 							</Link>
 							<Link
-								className="btn menu-item px-3"
+								className="btn menu-item"
 								to="/"
 								onClick={handleDrawerClose}
 							>
@@ -102,7 +100,7 @@ export default class App extends Component {
 								<span> Category 2</span>
 							</Link>
 							<Link
-								className="btn menu-item px-3"
+								className="btn menu-item"
 								to="/"
 								onClick={handleDrawerClose}
 							>

@@ -18,7 +18,8 @@ body {
   }
 
   .logo,
-  .menu {
+  .menu,
+  .close-drawer {
     height: 1rem;
   }
 }
@@ -31,7 +32,8 @@ body {
   }
 
   .logo,
-  .menu {
+  .menu,
+  .close-drawer {
     height: 1.5rem;
   }
 }
@@ -40,7 +42,7 @@ body {
 // Drawer Menu
 // =======
 
-$link-color: rgb(60, 60, 60);
+$link-color: rgb(30, 30, 30);
 
 @mixin link($color, $hover) {
   color: $color;
@@ -53,19 +55,21 @@ $link-color: rgb(60, 60, 60);
 }
 
 @mixin button-link($color, $bg) {
-  background: transparentize($bg, .5);
-  color: darken($color, 15%);
+  background: $bg;
+  color: lighten($color, 30%);
   text-decoration: none;
 
   &:hover {
-    background: $bg;
+    background: transparentize($bg, .5);
     color: $color;
 	}
 }
 
+$nav-text: #fff;
+
 .menu,
 .close-drawer {
-  @include link(#fff, transparentize(#fff, .5));
+  @include link($nav-text, transparentize($nav-text, .5));
 }
 
 $main-color: rgb(30, 30, 30);
@@ -77,13 +81,19 @@ $text-color: $main-color;
 }
 
 .welcome {
-  background: url('https://source.unsplash.com/qrMLvb60_rg/1200x800') no-repeat;
+  background-color: rgb(240, 240, 240);
+  background-image: linear-gradient(to bottom, rgba(240, 240, 240, 0), rgba(240, 240, 240, .75), rgba(240, 240, 240, 0)), url('https://source.unsplash.com/qrMLvb60_rg/1200x800');
+  background-repeat: no-repeat;
   background-position: center;
+
+  // Shorthand
+  // background: $bg-color url('https://source.unsplash.com/qrMLvb60_rg/1200x800') no-repeat center;
+
   background-size: cover;
   height: 100vh;
   width: 100vw;
 
   .welcome-search-subscribe {
-    @include button-link($bg-color, $text-color);
+    @include button-link(#fff, rgb(30, 30, 30));
   }
 }
