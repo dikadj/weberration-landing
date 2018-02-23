@@ -76,6 +76,17 @@ $link-color: rgb(30, 30, 30);
 	}
 }
 
+@mixin button-link-transparent-bg($color, $bg) {
+  background: transparentize($bg, 1);
+  color: transparentize($color, .5);
+  text-decoration: none;
+
+  &:hover {
+    background: transparentize($bg, .75);
+    color: transparentize($color, .75);
+	}
+}
+
 $nav-text: #fff;
 
 .menu,

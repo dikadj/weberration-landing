@@ -33,7 +33,6 @@ $(document).ready(() => {
 	$("#fullpage").fullpage({
 		scrollingSpeed: 1200,
 		easing: "easeOutCubic",
-		lazyLoading: true,
 	})
 })
 
